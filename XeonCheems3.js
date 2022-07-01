@@ -205,8 +205,8 @@ let _sewa = require("./lib/sewa");
 const sewa = JSON.parse(fs.readFileSync('./database/sewa.json'))
 
 // time (india)
-const time = moment.tz('Asia/Kolkata').format('DD/MM HH:mm:ss')
-const ucap = moment(Date.now()).tz('Asia/Kolkata').locale('id').format('a')
+const time = moment.tz('afrika/maroc').format('DD/MM HH:mm:ss')
+const ucap = moment(Date.now()).tz('afrika/dakhla').locale('id').format('a')
 // date
 var buln = ['/01/', '/02/', '/03/', '/04/', '/05/', '/06/', '/07/', '/08/', '/09/', '/10/', '/11/', '/12/'];
 var myHari = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -298,20 +298,12 @@ _sewa.expiredCheck(XeonBotInc, sewa)
 
 //group target by xeon\\
 const reply = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz1}`}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `follow me in instagrame`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz1}`}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `Subscribe YouTube Channel`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz2}`}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `follow me in instagrame`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz2}`}}}, { quoted: m})
         }
-        //auto reply by xeon
-  //if (Autoreply) //remove forwad slashes to make it autoreply on off
-        for (let anji of setik){
-				if (budy === anji){
-					result = fs.readFileSync(`./XeonMedia/sticker/${anji}.webp`)
-					XeonBotInc.sendMessage(m.chat, { sticker: result }, { quoted: m })
-					}
-			}
 			  //if (Autoreply) //remove forwad slashes to make it autoreply on off
 			for (let anju of vien){
 				if (budy === anju){
@@ -1395,11 +1387,11 @@ message: {
                 },
 	 message: { 
                  "videoMessage": { 
-                 "title": `Xeon`,
-                 "h": `Xeon`,
+                 "title": `vanitas`,
+                 "h": `vanitas`,
                  'duration': '99999', 
                  'gifPlayback': 'true', 
-                 'caption': `Xeon`,
+                 'caption': `vanitas`,
                  'jpegThumbnail': fs.readFileSync('./XeonMedia/theme/Cheems-bot.mp4')
                         }
                        }
@@ -1542,9 +1534,9 @@ const jumlahUser = pendaftar.length
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
   
 const menulist = `┌─❖
-│「 Hi 👋 」
+│「 مرحبا 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  How Are You? 😄
+┌┤✑  كيف الحال? 😄
 │└────────────┈ ⳹
 │
 └─「 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 」       
@@ -1808,7 +1800,7 @@ if (isBanChat) return reply(mess.banChat)
     XeonBotInc.sendMessage(from, {image:{url:anui}, caption:"Here you go!"}, {quoted:m})
 }
    break
-case 'neon':{
+case 'vanitas':{
 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
      let link = `https://textpro.me/neon-light-text-effect-online-882.html`
